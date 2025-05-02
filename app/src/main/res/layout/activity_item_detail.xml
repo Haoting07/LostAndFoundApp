@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Details"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REMOVE"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="#FFF" />
+</LinearLayout>

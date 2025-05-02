@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LostAndFoundApp</string>
+    <string name="post_type">Post type:</string>
+    <string name="lost">Lost</string>
+    <string name="found">Found</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_date">Date (e.g. 2025-05-02)</string>
+    <string name="hint_location">Location</string>
+    <string name="save">SAVE</string>
+    <string name="create_advert">CREATE A NEW ADVERT</string>
+    <string name="show_items">SHOW ALL LOST AND FOUND ITEMS</string>
+
+</resources>
