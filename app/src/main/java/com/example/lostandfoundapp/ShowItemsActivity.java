@@ -28,7 +28,7 @@ public class ShowItemsActivity extends AppCompatActivity {
         Cursor res = db.getAllData();
         while (res.moveToNext()) {
             ids.add(res.getInt(0));
-            items.add(res.getString(2) + ": " + res.getString(5));
+            items.add(res.getString(2) + ": " + res.getString(4)); // name + description
         }
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);

@@ -24,5 +24,16 @@
         android:text="@string/show_items"
         android:textColor="@android:color/white"
         android:backgroundTint="@android:color/holo_green_dark"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnShowMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_map"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_orange_dark"
         android:minHeight="48dp" />
 </LinearLayout>
+

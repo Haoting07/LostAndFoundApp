@@ -5,18 +5,10 @@
     android:background="#FFFFFF">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="24dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/post_type"
-            android:textSize="18sp"
-            android:textColor="#000000"
-            android:layout_marginBottom="8dp" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -24,85 +16,73 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="16dp">
-
             <RadioButton
                 android:id="@+id/radioLost"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lost"
-                android:textColor="#000000" />
-
+                android:text="Lost"
+                android:checked="true"/>
             <RadioButton
                 android:id="@+id/radioFound"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/found"
-                android:textColor="#000000" />
+                android:text="Found"/>
         </RadioGroup>
 
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_name"
+            android:hint="Name"
             android:inputType="textPersonName"
-            android:autofillHints="name"
             android:minHeight="48dp"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"/>
 
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_phone"
+            android:hint="Phone"
             android:inputType="phone"
-            android:autofillHints="phone"
             android:minHeight="48dp"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"/>
 
         <EditText
             android:id="@+id/etDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_description"
+            android:hint="Description"
             android:inputType="textMultiLine"
-            android:autofillHints="none"
             android:minHeight="64dp"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"/>
 
         <EditText
             android:id="@+id/etDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_date"
+            android:hint="Date (e.g. 2025-05-08)"
             android:inputType="text"
-            android:autofillHints="none"
             android:minHeight="48dp"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"/>
 
         <EditText
             android:id="@+id/etLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_location"
-            android:inputType="textPostalAddress"
-            android:autofillHints="postalAddress"
+            android:hint="Location"
+            android:focusable="false"
             android:minHeight="48dp"
-            android:padding="12dp"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET CURRENT LOCATION"
+            android:layout_marginBottom="16dp"/>
 
         <Button
             android:id="@+id/btnSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:textColor="@android:color/white"
-            android:minHeight="48dp"
-            android:padding="12dp" />
+            android:text="SAVE"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 </ScrollView>

@@ -26,9 +26,12 @@ public class ItemDetailActivity extends AppCompatActivity {
         Cursor res = db.getAllData();
         while (res.moveToNext()) {
             if (res.getInt(0) == itemId) {
-                String details = res.getString(1) + " " + res.getString(4) + "\n"
-                        + res.getString(5) + "\n"
-                        + "At " + res.getString(6);
+                String details = "Type: " + res.getString(1) + "\n" +
+                        "Name: " + res.getString(2) + "\n" +
+                        "Phone: " + res.getString(3) + "\n" +
+                        "Desc: " + res.getString(4) + "\n" +
+                        "Date: " + res.getString(5) + "\n" +
+                        "Location: " + res.getString(6);
                 tvDetails.setText(details);
                 break;
             }
@@ -41,4 +44,5 @@ public class ItemDetailActivity extends AppCompatActivity {
         });
     }
 }
+
 

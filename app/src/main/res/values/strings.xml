@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">LostAndFoundApp</string>
+
+    <!-- 表单标签与提示 -->
     <string name="post_type">Post type:</string>
     <string name="lost">Lost</string>
     <string name="found">Found</string>
@@ -8,8 +10,14 @@
     <string name="hint_description">Description</string>
     <string name="hint_date">Date (e.g. 2025-05-02)</string>
     <string name="hint_location">Location</string>
+
+    <!-- 按钮文本 -->
     <string name="save">SAVE</string>
     <string name="create_advert">CREATE A NEW ADVERT</string>
-    <string name="show_items">SHOW ALL LOST AND FOUND ITEMS</string>
+    <string name="show_items">SHOW ALL LOST &amp; FOUND ITEMS</string>
+    <string name="show_map">SHOW ON MAP</string>
+    <string name="get_current_location">GET CURRENT LOCATION</string>
 
+    <!-- Google API Key -->
+    <string name="google_maps_key">AIzaSyBYwxPksjgSGiAWbuyEQcKP0loXs_YWjcQ</string>
 </resources>
